@@ -56,12 +56,12 @@ class App(customtkinter.CTk):
 
         # Add dietary restrictions frame
         self.diets = MyCheckboxFrame(self, "Dietary Restrictions",
-                                     values=["Vegetarian", "Pollotarian", "Pescatarian", "No Red Meat", "Vegan", "Gluten Free", "Any"])
+                                     values=["Vegetarian", "Pollotarian", "Pescatarian", "No Red Meat", "Vegan", "Gluten Free"])
         self.diets.grid(row=1, column=1, pady=(10, 0), padx=(0, 10), sticky="nsew")
 
         # Add textbox for ingredients
         self.ingredients = customtkinter.CTkEntry(self,
-                                                  placeholder_text="Enter Ingredients you want to use! (Separate each ingredient with a comma)",
+                                                  placeholder_text="Enter Ingredients you want to use!",
                                                   width=100, height=100)
         self.ingredients.grid(row=2, column=0, columnspan=2, pady=10, padx=10, sticky="nsew")
 
