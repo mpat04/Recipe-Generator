@@ -97,6 +97,9 @@ class App(customtkinter.CTk):
         cuisine = self.cuisineframe.get()
         diet = self.diets.get()
 
+        # clear recipe box to generate new recipe
+        self.recipebox.delete("1.0", "end")
+
         prompt = "Please generate a recipe with the following requirements. "
         prompt += f" Ingredients I have: {ingredients}. "
         prompt += f" The cuisine I want: {cuisine}. "
